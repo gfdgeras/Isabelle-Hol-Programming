@@ -1,5 +1,4 @@
-theory example26
-  imports Main
+theory example26 imports Main
 begin
 datatype 'a tree = Tip | Node "'a tree" 'a "'a tree"
 
@@ -15,6 +14,6 @@ fun treesum :: "nat tree \<Rightarrow> nat" where
 lemma "treesum t = listsum(contents t)"
   apply (induction t)
   apply auto
-  done
+  oops
     
 end

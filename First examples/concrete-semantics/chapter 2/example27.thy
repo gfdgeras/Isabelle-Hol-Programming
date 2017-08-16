@@ -1,5 +1,4 @@
-theory example27
-imports Main
+theory example27 imports Main
 begin
 
 datatype 'a tree2 = Tip 'a | Node "'a tree2" 'a "'a tree2"

@@ -1,5 +1,4 @@
-theory example24
-  imports Main
+theory example24 imports Main
 begin
 
 fun snoc:: "'a list \<Rightarrow> 'a \<Rightarrow>'a list" where
