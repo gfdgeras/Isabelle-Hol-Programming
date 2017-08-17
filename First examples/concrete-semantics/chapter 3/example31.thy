@@ -12,6 +12,8 @@ fun aval :: "aexp \<Rightarrow> state \<Rightarrow> val" where
   "aval (V x) s = s x" |
   "aval (Plus a b) s = aval a s + aval b s"
 
+value "aval (N 4) s"
+
 fun asimp_const :: "aexp \<Rightarrow> aexp" where
   "asimp_const (N a) = N a" |
   "asimp_const (V x) = V x" |
