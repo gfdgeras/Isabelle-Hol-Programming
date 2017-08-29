@@ -53,5 +53,6 @@ ML \<open>
   val list2 = fold_rev cons items [];
   @{assert} (list2 = items);
 \<close>
+
 end
   
